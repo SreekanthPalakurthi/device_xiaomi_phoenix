@@ -283,6 +283,12 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# Kernel
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/phoenix-kernel/sm6150/kernel-headers
+LOCAL_KERNEL := device/xiaomi/phoenix-kernel/kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
