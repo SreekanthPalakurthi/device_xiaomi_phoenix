@@ -139,6 +139,9 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/phoenix-kernel/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/phoenix-kernel
 TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/xiaomi/phoenix
+TARGET_KERNEL_CONFIG := vendor/phoenix-perf_defconfig
+
 
 # Media
 TARGET_DISABLED_UBWC := true
